@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Convalidaciones</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="instituto">IES El Rincón</string>
+
+    <string name="sin_datos">Sin datos.</string>
+    <string name="progress_cargando_datos">Cargando datos&#8230;</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+    <string name="action_continuar">Continuar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="borrar">Borrar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ver">Ver</string>
+
+    <string name="titulo_principal_detalle_ciclo">Detalle del Ciclo</string>
+    <string name="titulo_ciclo_nombre">Nombre del Ciclo</string>
+    <string name="prompt_ciclo_nombre">Nombre del Ciclo</string>
+    <string name="titulo_ciclo_abreviatura">Nombre de la Abreviatura del Ciclo</string>
+    <string name="prompt_ciclo_abreviatura">Nombre de la Abreviatura del Ciclo</string>
+    <string name="seleccione_el_ciclo">Seleccione el Ciclo</string>
+    <string name="cursos_ciclos">Cursos/Ciclos</string>
+    <string name="title_activity_gestion_cursos_ciclos">Cursos/Ciclos</string>
+    <string name="title_activity_ciclo_detalle">Detalle del Ciclo</string>
+
+    <string name="titulo_principal_detalle_curso">Detalle del Curso</string>
+    <string name="titulo_curso_anno">Año</string>
+    <string name="prompt_curso_anno">P.Ej: 1, 2 ó 3</string>
+    <string name="titulo_curso_turno">Turno</string>
+    <string name="prompt_curso_turno">P.Ej: Mañana, Tarde, Noche</string>
+    <string name="titulo_curso_ciclo">Ciclo</string>
+    <string name="prompt_curso_ciclo">P.Ej: ASIR, DAM, SMR ó DAW</string>
+    <string name="seleccione_el_curso">Seleccione el Curso</string>
+    <string name="cursos">Cursos</string>
+    <string name="title_activity_gestion_cursos">Cursos</string>
+    <string name="title_activity_curso_detalle">Detalle del Curso</string>
+    <string name="title_activity_curso_seleccionar">Cursos</string>
+
+    <string name="titulo_principal_detalle_estudio">Detalle del Estudio</string>
+    <string name="titulo_estudio_nombre">Estudio</string>
+    <string name="prompt_estudio_nombre">Estudio</string>
+    <string name="titulo_estudio_codigo">Código del Estudio</string>
+    <string name="prompt_estudio_codigo">Código del Estudio</string>
+    <string name="seleccione_el_estudio">Seleccione el Estudio</string>
+    <string name="estudios">Estudios</string>
+    <string name="title_activity_gestion_estudios">Estudios</string>
+    <string name="title_activity_estudio_detalle">Detalle del Estudio</string>
+    <string name="title_activity_estudio_seleccionar">Estudios</string>
+
+    <string name="titulo_principal_detalle_convalidacionposible">Detalle de la Convalidación</string>
+    <string name="titulo_convalidacionposible_estudioconvalidado">Estudio Convalidado</string>
+    <string name="prompt_convalidacionposible_estudioconvalidado">Estudio Convalidado</string>
+    <string name="titulo_convalidacionposible_estudioconvalidado_seleccione">Seleccione el Estudio Convalidado</string>
+    <string name="titulo_convalidacionposible_estudioaportado">Estudio Aportado</string>
+    <string name="prompt_convalidacionposible_estudioaportado">Estudio Aportado</string>
+    <string name="titulo_convalidacionposible_estudioaportado_seleccione">Seleccione el Estudio Aportado</string>
+    <string name="titulo_convalidacionposible_curso">Curso</string>
+    <string name="titulo_convalidacionposible_curso_seleccione">Seleccione el Curso</string>
+    <string name="prompt_convalidacionposible_curso">Curso</string>
+    <string name="seleccione_la_convalidacionposible">Seleccione la Convalidación</string>
+    <string name="convalidacionesposibles">Convalidaciones</string>
+    <string name="title_activity_gestion_convalidacionesposibles">Convalidaciones</string>
+    <string name="title_activity_convalidacionposible_detalle">Detalle de la Convalidación</string>
+
+    <string name="titulo_principal_detalle_solicitud">Detalle de la Solicitud</string>
+    <string name="titulo_solicitud_estudioconvalidado">Estudio Convalidado</string>
+    <string name="prompt_solicitud_estudioconvalidado">Estudio Convalidado</string>
+    <string name="titulo_solicitud_estudioconvalidado_seleccione">Seleccione el Estudio Convalidado</string>
+    <string name="titulo_solicitud_estudioaportado">Estudio Aportado</string>
+    <string name="prompt_solicitud_estudioaportado">Estudio Aportado</string>
+    <string name="titulo_solicitud_estudioaportado_seleccione">Seleccione el Estudio Aportado</string>
+    <string name="titulo_solicitud_curso">Curso</string>
+    <string name="titulo_solicitud_curso_seleccione">Seleccione el Curso</string>
+    <string name="prompt_solicitud_curso">Curso</string>
+    <string name="seleccione_la_solicitud">Seleccione la Solicitud</string>
+    <string name="solicitudes">Solicitudes</string>
+    <string name="title_activity_gestion_solicitudes">Solicitudes</string>
+    <string name="title_activity_solicitud_asistente">Asistente Solicitud</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_signup">Registrarse</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar Sesión</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">Email no válido</string>
+    <string name="error_invalid_password">Contraseña demasiado corta</string>
+    <string name="error_incorrect_password">Contraseña incorrecta</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_signup_email">Email</string>
+    <string name="prompt_signup_password">Contraseña</string>
+    <string name="prompt_signup_password_repeat">Repita la Contraseña</string>
+    <string name="prompt_signup_nombre">Nombre</string>
+    <string name="prompt_signup_apellidos">Apellidos</string>
+    <string name="prompt_signup_dni">DNI</string>
+    <string name="prompt_signup_telefono">Teléfono</string>
+    <string name="action_sign_up">Registrarse</string>
+
+    <!-- Strings related to usuario_detalle -->
+    <string name="prompt_usuariodetalle_actualizar">Actualizar</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_solicitud_asistente_paso1">Paso 1: Datos Generales</string>
+    <string name="prompt_solicitud_asistente_paso2">Paso 2: Solicitar Convalidaciones</string>
+    <string name="prompt_solicitud_asistente_paso3">Paso 3: Crear/Mostrar/Enviar Solicitud</string>
+    <string name="prompt_solicitudfragment_fecha">Fecha</string>
+    <string name="prompt_solicitudfragment_cursoacademico">Curso Académico</string>
+    <string name="prompt_solicitudfragment_curso">Curso</string>
+    <string name="prompt_solicitudfragment_usuario">Solicitante</string>
+    <string name="prompt_solicitudfragment_telefono">Teléfono</string>
+    <string name="prompt_solicitudfragment_dni">NIF</string>
+
+    <string name="prompt_convalidacionposible_estandomatriculadoen">Estando matriculado/a en:</string>
+    <string name="prompt_convalidacionposible_aportando">Aportando:</string>
+    <string name="prompt_convalidacionposible_convalidar">Convalidar:</string>
+
+    <string name="prompt_convalidacionposibleensolicitud_aportando">Aportando:</string>
+    <string name="prompt_convalidacionposibleensolicitud_convalidar">Convalidar:</string>
+
+    <string name="title_activity_convalidacionposible_seleccionar">Convalidaciones</string>
+
+
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ies_el_rincon">IES El Rincón</string>
+
+    <string name="Administrador">Administrador</string>
+    <string name="Alumno">Alumno</string>
+
+</resources>

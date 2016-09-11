@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.ieselrincon.convalidaciones">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_ies_el_rincon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.SignUpActivity"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name=".view.UsuarioDetalleActivity"
+            android:label="@string/title_activity_signup"
+            android:parentActivityName=".view.SolicitudAsistenteActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.SolicitudAsistenteActivity" />
+        </activity>
+        <activity
+            android:name=".view.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".view.CiclosCursosGestionActivity"
+            android:label="@string/title_activity_gestion_cursos_ciclos"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.CicloDetalleActivity"
+            android:label="@string/title_activity_ciclo_detalle"
+            android:parentActivityName=".view.CiclosCursosGestionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.CiclosCursosGestionActivity" />
+        </activity>
+        <activity
+            android:name=".view.CursoDetalleActivity"
+            android:label="@string/title_activity_curso_detalle"
+            android:parentActivityName=".view.CiclosCursosGestionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.CiclosCursosGestionActivity" />
+        </activity>
+        <activity
+            android:name=".view.CursoSeleccionarActivity"
+            android:label="@string/title_activity_curso_seleccionar"
+            android:parentActivityName=".view.ConvalidacionPosibleDetalleActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ConvalidacionPosibleDetalleActivity" />
+        </activity>
+        <activity
+            android:name=".view.EstudiosGestionActivity"
+            android:label="@string/title_activity_gestion_estudios"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.EstudioDetalleActivity"
+            android:label="@string/title_activity_estudio_detalle"
+            android:parentActivityName=".view.EstudiosGestionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.EstudiosGestionActivity" />
+        </activity>
+        <activity
+            android:name=".view.EstudioSeleccionarActivity"
+            android:label="@string/title_activity_estudio_seleccionar"
+            android:parentActivityName=".view.ConvalidacionPosibleDetalleActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ConvalidacionPosibleDetalleActivity" />
+        </activity>
+        <activity
+            android:name=".view.ConvalidacionesPosiblesGestionActivity"
+            android:label="@string/title_activity_gestion_convalidacionesposibles"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.ConvalidacionPosibleDetalleActivity"
+            android:label="@string/title_activity_convalidacionposible_detalle"
+            android:launchMode="singleTop"
+            android:parentActivityName=".view.ConvalidacionesPosiblesGestionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!-- launchmode="singleTop" es para que se guarde el estado de la actividad. Así es como me funcionó el HomeUp -->
+
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ConvalidacionesPosiblesGestionActivity" />
+        </activity>
+        <activity
+            android:name=".view.ConvalidacionPosibleEnSolicitudSeleccionarActivity"
+            android:label="@string/title_activity_convalidacionposible_seleccionar"
+            android:parentActivityName=".view.SolicitudAsistenteActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.SolicitudAsistenteActivity" />
+        </activity>
+        <activity
+            android:name=".view.SolicitudesGestionActivity"
+            android:label="@string/title_activity_gestion_solicitudes"
+            android:launchMode="singleTop"
+            android:parentActivityName=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.SolicitudAsistenteActivity"
+            android:label="@string/title_activity_solicitud_asistente"
+            android:launchMode="singleTop"
+            android:parentActivityName=".view.SolicitudesGestionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!-- launchmode="singleTop" es para que se guarde el estado de la actividad. Así es como me funcionó el HomeUp -->
+
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.SolicitudesGestionActivity" />
+        </activity>
+
+        <provider
+            android:name=".model.proveedor.ProveedorDeContenido"
+            android:authorities="org.ieselrincon.convalidaciones.model.proveedor.ProveedorDeContenido"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!--<provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="org.ieselrincon.convalidaciones.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>-->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_nueva_solicitud"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Nueva Solicitud" />
+        <item
+            android:id="@+id/nav_todas_las_solicitudes"
+            android:icon="@drawable/ic_assignment_return_black_24dp"
+            android:title="Solicitudes anteriores" />
+    </group>
+
+    <item android:title="Otras opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_cursos_ciclos"
+                android:icon="@drawable/ic_school_black_24dp"
+                android:title="@string/cursos_ciclos" />
+            <item
+                android:id="@+id/nav_estudios"
+                android:icon="@drawable/ic_account_balance_black_24dp"
+                android:title="@string/estudios" />
+            <item
+                android:id="@+id/nav_convalidacionesposibles"
+                android:icon="@drawable/ic_card_membership_black_24dp"
+                android:title="@string/convalidacionesposibles" />
+        </menu>
+    </item>
+
+</menu>

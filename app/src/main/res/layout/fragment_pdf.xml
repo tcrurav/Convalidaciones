@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.ieselrincon.convalidaciones.view.PDFFragment"
+    android:id="@+id/frame_pdf"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="140dp"
+            android:text="@string/prompt_solicitud_asistente_paso3"/>
+
+    </LinearLayout>
+<!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_pdf_crearpdf"
+        android:text="Crear PDF"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_pdf_mostrarpdf"
+        android:text="Mostrar PDF"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_pdf_enviarpdf"
+        android:text="Enviar PDF"/>
+-->
+    <!-- width: 595 pt-->
+
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:id="@+id/imageButtonMostrar"
+        android:src="@drawable/mostrar_pdf"/>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_pdf"
+        android:layout_width="5595dp"
+        android:layout_height="5842dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textview_pdf_cabecera1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:text="SOLICITUD DE CONVALIDACIÓN"/>
+        <TextView
+            android:id="@+id/textview_pdf_cabecera2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:text="DE ESTUDIOS DE FORMACIÓN PROFESIONAL"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_datospersonales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textview_pdf_expone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="EXPONE:"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_punto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="1. Que he cursado y aprobado los siguientes módulos/estudios:"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_estudiosaportados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textview_pdf_punto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textview_pdf_punto3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="3. Que estoy enterado/a de la legislación sobre materia de convalidaciones y que puedo consultar en la web del MEC dicha legislación."/>
+
+        <TextView
+            android:id="@+id/textview_pdf_solicita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:text="SOLICITA:"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_encabezado_estudiosconvalidados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="La convalidación de los siguientes módulos del curso en el que está matriculado:"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_estudiosconvalidados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textview_pdf_indicaciones0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Tenga en cuenta que debe entregar en la secretaría del IES El Rincón la siguiente documentación adjunta a este escrito:"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_indicaciones1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:text="Fotocopia del DNI, en el caso de que no se preste el consentimiento contenido en el anexo I para la verificación de los datos de identidad a través del Sistema de Verificación de Datos (Real Decreto 522/2006, de 28 de abril), o fotocopia del Pasaporte o de la Tarjeta de Extranjero/a o del Permiso de Residencia (temporal o definitivo) o del visado de Estudios (Régimen Especial de Estudiantes Extranjeros/as)."/>
+
+        <TextView
+            android:id="@+id/textview_pdf_indicaciones2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:text="Justificación documental de los estudios cursados (original o fotocopia compulsada de la certificación académica oficial o del título o del libro de calificaciones). En el caso de estudios universitarios, es obligatorio presentar original o fotocopia compulsada de la certificación académica oficial, con indicación de las horas o créditos de cada materia superada."/>
+
+        <TextView
+            android:id="@+id/textview_pdf_indicaciones3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:text="En el caso de que la convalidación deba ser resuelta por la Dirección General de Formación Profesional del Ministerio de Educación, se debe adjuntar acreditación justificativa de estar matriculado/a en el ciclo formativo para el que solicita la/s convalidación/es especificando claramente la familia profesional, el grado, el título y el sistema educativo al que pertenece, bien sea derivado de la Ley Orgánica 1/1990 (LOGSE) o de la Ley Orgánica 2/2006 (LOE)."/>
+
+        <TextView
+            android:id="@+id/textview_pdf_indicaciones4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:text="En el caso de aportar estudios universitarios, se adjuntarán también los programas oficiales sellados por la universidad (original o fotocopia compulsada) de las asignaturas superadas, con indicación clara de los contenidos teóricos y prácticos de las asignaturas superadas y en las que fundamenta su solicitud de convalidación."/>
+
+        <TextView
+            android:id="@+id/textview_pdf_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textview_pdf_interesado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="EL/LA INTERESADO/A"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_firmado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:text="Firmado:_______________________________________"/>
+
+        <TextView
+            android:id="@+id/textview_pdf_pie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="Avda. José Sánchez Peñate s/n, 35010. Las Palmas de GC – Telf.: 928227283 – FAX:928222102"/>
+
+    </LinearLayout>
+
+</LinearLayout>

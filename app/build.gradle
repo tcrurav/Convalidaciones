@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "org.ieselrincon.convalidaciones"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+    //Librería para el asistente de pasos usado para la Solicitud (https://github.com/anton46/Android-StepsView)
+
+    //Librería para crear iconos de letras (https://github.com/amulyakhare/TextDrawable)
+
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.google.android.gms:play-services-appindexing:9.4.0'
+    compile 'com.anton46:stepsview:0.0.2'
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    compile 'com.android.support:support-v4:24.2.0'
+
+    compile 'com.itextpdf:itextg:5.5.9'
+
+    compile 'com.github.barteksc:android-pdf-viewer:2.0.2'
+
+    compile 'com.android.support:cardview-v7:24.2.0'
+}

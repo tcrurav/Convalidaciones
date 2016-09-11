@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/list_selector" -->
+<LinearLayout android:id="@+id/LLCiclo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:background="@drawable/list_selector" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<ImageView android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="@dimen/appbar_padding_top"
+			android:id="@+id/image_view"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/appbar_padding_top"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+				android:text="@string/prompt_convalidacionposible_convalidar"
+				android:layout_marginTop="@dimen/appbar_padding_top"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:id="@+id/textview_convalidacionposible_list_item_estudioconvalidado"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+				android:text="@string/prompt_convalidacionposible_aportando"
+				android:layout_marginTop="@dimen/appbar_padding_top"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:id="@+id/textview_convalidacionposible_list_item_estudioaportado"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+				android:text="@string/prompt_convalidacionposible_estandomatriculadoen"
+				android:layout_marginTop="@dimen/appbar_padding_top"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+				android:id="@+id/textview_convalidacionposible_list_item_curso"
+				android:layout_marginBottom="@dimen/appbar_padding_top"
+				/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

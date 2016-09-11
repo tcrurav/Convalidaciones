@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:context=".view.EstudioDetalleActivity" >
+
+	<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/main_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fitsSystemWindows="true"
+		tools:context="org.ieselrincon.convalidaciones.view.EstudioDetalleActivity">
+
+		<android.support.design.widget.AppBarLayout
+			android:id="@+id/appbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/appbar_padding_top"
+			android:theme="@style/AppTheme.AppBarOverlay">
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:layout_scrollFlags="scroll|enterAlways"
+				app:popupTheme="@style/AppTheme.PopupOverlay">
+
+			</android.support.v7.widget.Toolbar>
+
+		</android.support.design.widget.AppBarLayout>
+
+
+
+		<!-- Login progress -->
+
+		<LinearLayout
+			android:id="@+id/EstudioDetalle_Status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center_horizontal"
+			android:orientation="vertical"
+			android:visibility="gone" >
+
+			<ProgressBar
+				style="?android:attr/progressBarStyleLarge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp" />
+			<TextView
+				android:id="@+id/EstudioDetalle_StatusMessage"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="16dp"
+				android:text="@string/progress_cargando_datos"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+		</LinearLayout>
+
+		<!-- form -->
+
+		<LinearLayout
+			android:id="@+id/EstudioDetalle_Form"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical" >
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@android:color/darker_gray"
+				android:paddingTop="@android:dimen/notification_large_icon_height"
+				android:text="@string/titulo_principal_detalle_estudio"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/activity_vertical_margin" />
+
+			<ScrollView
+				android:id="@+id/EstudioDetalle_FormScroll"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@android:color/white" >
+
+				<LinearLayout
+					style="@style/LoginFormContainer"
+					android:background="@android:color/white"
+					android:orientation="vertical" >
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/appbar_padding_top"
+						android:background="@color/colorPrimaryDark"
+						android:text="@string/titulo_estudio_codigo"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/activity_vertical_margin" />
+
+					<EditText
+						android:id="@+id/textview_estudio_detalle_codigo"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/prompt_estudio_codigo"
+						android:imeActionId="@+id/login"
+						android:imeActionLabel="@string/titulo_estudio_codigo"
+						android:imeOptions="actionUnspecified"
+						android:maxLines="1"
+						android:inputType="textCapWords"
+						android:singleLine="true" />
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/appbar_padding_top"
+						android:background="@color/colorPrimaryDark"
+						android:text="@string/titulo_estudio_nombre"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/activity_vertical_margin" />
+
+					<EditText
+						android:id="@+id/textview_estudio_detalle_nombre"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/prompt_estudio_nombre"
+						android:imeActionId="@+id/login"
+						android:imeActionLabel="@string/titulo_estudio_nombre"
+						android:imeOptions="actionUnspecified"
+						android:maxLines="1"
+						android:inputType="textCapWords"
+						android:singleLine="true" />
+
+				</LinearLayout>
+
+			</ScrollView>
+		</LinearLayout>
+
+		<android.support.design.widget.FloatingActionButton
+			android:id="@+id/fab"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end|bottom"
+			android:layout_margin="@dimen/fab_margin"
+			android:src="@android:drawable/ic_menu_save" />
+
+	</android.support.design.widget.CoordinatorLayout>
+
+</merge>
